@@ -1,18 +1,8 @@
-import React, { Component } from 'react';          
-import {Text, View} from 'react-native';
+import React from 'react';
+import Login from './components/pages/Login/index';
 
-
-
-//Class base component
-class App extends Component{
-  render(){
-    return (
-      <View>                                    
-        <Text>Hello World</Text>
-      </View>
-    )
-  }
-  
+const App = () => {
+  return <Login />;
 }
 
 export default App;
