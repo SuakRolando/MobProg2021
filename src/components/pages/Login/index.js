@@ -1,32 +1,43 @@
-import React from 'react';          
+import React, {useState, useEffect} from 'react';          
 import {Text, View, StyleSheet} from 'react-native';
 import TextInput from '../../atoms/TextInput';
 import Button from '../../atoms/Button';
 import Gap from '../../atoms/Gap';
 
-/*Class base component
-class App extends Component{
-  render(){
-    return (
-      <View>                                    
-        <Text>Hello World</Text>
-      </View>
-    )
-  }
-  
-}
-*/
 
 const App = () => {
+
+  const [welcome, setWelcome] = useState('Haii');
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+
+  useEffect(() => {
+    console.log('Componen Did mount');
+  }, []);
+
+  useEffect(()=> {
+    console.log('Componen did update');
+  }, [welcome])
+
+  const handleSubmit = () =>{
+    setWelcome('Welcome');
+
+    const data = {
+      userName: userName,
+      password: password,
+    };
+    console.log(data);
+  };
+
   return(
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome</Text>
+      <Text style={styles.title}>{welcome}</Text>
       <Gap height={40} />
-      <TextInput label="Username" placeholder="Masukan username anda"/>
+      <TextInput value= {userName} label="Username" placeholder="Masukan username anda" onChangeText={e => setUserName(e)} />
       <Gap height={24} />
-      <TextInput label="Password" placeholder="Masukan password anda"/>
+      <TextInput value= {password} label="Password" placeholder="Masukan password anda" onChangeText={e => setPassword(e)} secureTextEntry={true} />
       <Gap height={48} />
-      <Button label="Sign In"/>
+      <Button label="Sign In" onSubmit={handleSubmit}/>
       
     </View>
   )

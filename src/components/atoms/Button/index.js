@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native'
 
-const Button = ({label}) => {
+const Button = ({label, onSubmit}) => {
     return (
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity onPress={onSubmit} style={styles.button}>
         <Text style={styles.labelbutton}>{label}</Text>
       </TouchableOpacity>
     )
@@ -11,15 +11,21 @@ const Button = ({label}) => {
 
 const styles = StyleSheet.create({
     button:{
-        backgroundColor: '#ffc93c',
-        paddingVertical: 15,
-        borderRadius: 10,
+        backgroundColor: '#C238CE',
+        marginTop: 29,
+        marginHorizontal:24,
+        borderRadius: 20,
+        paddingVertical:3,
       },
       labelbutton:{
+        fontFamily: 'Roboto',
         textAlign: 'center',
-        fontSize: 14,
+        fontSize: 18,
         color: 'white',
-        fontWeight: '700',    
+        fontWeight: '500',  
+        lineHeight: 21,  
+        paddingTop:9,
+        paddingBottom:10,
       },
 });
 
