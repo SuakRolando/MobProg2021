@@ -1,11 +1,11 @@
 import React from 'react';
-import Login from './components/pages/Login/index';
 import Register from './components/pages/Register';
 import UserList from './components/pages/User_List';
+import HomeScreen from './components/pages/HomeScreen'
 
 
 const App = () => {
-  return <UserList />;
+  return <HomeScreen />;
 }
 
 export default App;

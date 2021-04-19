@@ -1,21 +1,17 @@
-import React from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
-import UserList from '../../pages/User_List'
+import React from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
-const Card = ({name, username, email, address, phone}) => {
+const Card = ({fullName, email, imageUrl}) => {
     return (
-        <View>
             <View style={styles.card}>
-                <Text style={styles.name}>{name}</Text>
-                <Text style={styles.userName}>{username}</Text>
-                <Text style={styles.email}>{email}</Text>
-                <Text style={styles.address}>{address}</Text>
-                <Text style={styles.phone}>{phone}</Text>
-                
+                <Image style={styles.image} sources={{url: `${imageUrl}`}} />
+                <View style={styles.cardRapper}>
+                    <Text style={styles.name}>{fullName}</Text>
+                    <Text style={styles.email}>{email}</Text>
+                </View>
             </View>
-        </View>
-    )
-}
+    );
+};
 
 export default Card
 
@@ -23,19 +19,31 @@ const styles = StyleSheet.create({
     card: {
         marginTop: 15,
         alignItems: 'center',
+        flexDirection: 'row',
+    },
+    card : {
+        marginLeft: 10,
+        justifyContent: 'center',
     },
     name:{
-        fontSize: 18,
+        fontSize: 14,
         fontWeight: '700',
+        lineHeight: 16,
+        marginLeft: 26,
+        marginTop: 13,
+        marginBottom: 5,
     },
     email: {
-        fontSize: 16,
-        color: 'blue',
-        marginTop: 10,
+        fontSize: 14,
+        fontWeight: '700',
+        lineHeight: 16,
+        marginLeft: 26,
+        marginBottom: 5,
     },
     image: {
-        height: 150,
-        width: 150,
+        height: 100,
+        width: 100,
         marginTop: 10,
+        borderRadius: 100,
     },
 })
