@@ -1,49 +1,32 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
-const Card = ({fullName, email, imageUrl}) => {
-    return (
-            <View style={styles.card}>
-                <Image style={styles.image} sources={{url: `${imageUrl}`}} />
-                <View style={styles.cardRapper}>
-                    <Text style={styles.name}>{fullName}</Text>
-                    <Text style={styles.email}>{email}</Text>
-                </View>
-            </View>
-    );
+const Card = ({firstName, email, lastName}) => {
+  return (
+    <View style={styles.card}>
+      <Text style={styles.name}>{firstName}</Text>
+      <Text email={styles.email}>{email}</Text>
+      <Text lastName={styles.name}>{lastName}</Text>
+    </View>
+  );
 };
-
-export default Card
+export default Card;
 
 const styles = StyleSheet.create({
-    card: {
-        marginTop: 15,
-        alignItems: 'center',
-        flexDirection: 'row',
-    },
-    card : {
-        marginLeft: 10,
-        justifyContent: 'center',
-    },
-    name:{
-        fontSize: 14,
-        fontWeight: '700',
-        lineHeight: 16,
-        marginLeft: 26,
-        marginTop: 13,
-        marginBottom: 5,
-    },
-    email: {
-        fontSize: 14,
-        fontWeight: '700',
-        lineHeight: 16,
-        marginLeft: 26,
-        marginBottom: 5,
-    },
-    image: {
-        height: 100,
-        width: 100,
-        marginTop: 10,
-        borderRadius: 100,
-    },
-})
+  card: {
+    marginTop: 10,
+    marginHorizontal: 24,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: 100,
+    borderColor: 'purple',
+  },
+  name: {
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  email: {
+    fontSize: 16,
+    color: 'blue',
+  },
+});

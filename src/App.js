@@ -1,12 +1,23 @@
 import React from 'react';
+import {View, Text, StyleSheet} from 'react-native';
 import Register from './components/pages/Register';
-import UserList from './components/pages/User_List';
-import HomeScreen from './components/pages/HomeScreen'
-
 
 const App = () => {
-  return <HomeScreen />;
-}
+  return (
+    <View>
+      <Text style={styles.Title}>Screen Register</Text>
+      <Register />
+    </View>
+  );
+};
 
 export default App;
 
+const styles = StyleSheet.create({
+  Title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    marginHorizontal: 24,
+    marginVertical: 18,
+  },
+});

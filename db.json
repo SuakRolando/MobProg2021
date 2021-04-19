@@ -18,74 +18,52 @@
   },
   "users": [
     {
-      "id": 7,
-      "email": "michael.lawson@reqres.in",
-      "first_name": "Michael",
-      "last_name": "Lawson",
-      "avatar": "https://reqres.in/img/faces/7-image.jpg"
-    },
-    {
-      "id": 8,
-      "email": "lindsay.ferguson@reqres.in",
-      "first_name": "Lindsay",
-      "last_name": "Ferguson",
-      "avatar": "https://reqres.in/img/faces/8-image.jpg"
-    },
-    {
-      "id": 9,
+      "id": 1,
       "email": "tobias.funke@reqres.in",
       "first_name": "Tobias",
-      "last_name": "Funke",
-      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+      "last_name": "Funke"
     },
     {
-      "id": 10,
+      "id": 2,
       "email": "byron.fields@reqres.in",
       "first_name": "Byron",
-      "last_name": "Fields",
-      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+      "last_name": "Fields"
     },
     {
-      "id": 11,
-      "email": "george.edwards@reqres.in",
-      "first_name": "George",
-      "last_name": "Edwards",
-      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+      "firstName": "Rolando",
+      "lastName": "Suak",
+      "email": "rolando@gmail.com",
+      "id": 3
     },
     {
-      "id": 12,
-      "email": "rachel.howell@reqres.in",
-      "first_name": "Rachel",
-      "last_name": "Howell",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+      "firstName": "Ando",
+      "lastName": "Suak",
+      "email": "Ando@gmail.com",
+      "id": 4
     },
     {
-      "id": 13,
-      "email": "rachel.howell@reqres.in",
-      "first_name": "Rolando",
-      "last_name": "Suak",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+      "firstName": "Hance",
+      "lastName": "Suak",
+      "email": "Hance@gmail.com",
+      "id": 5
     },
     {
-      "email": "ando@gmail.com",
-      "first_name": "ando",
-      "last_name": "suak",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg",
-      "id": 14
+      "firstName": "Rolando",
+      "lastName": "Suak",
+      "email": "Rolando@gmail.com",
+      "id": 6
     },
     {
-      "email": "ando@gmail.com",
-      "first_name": "ando",
-      "last_name": "suak",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg",
-      "id": 15
+      "firstName": "Hance",
+      "lastName": "Suak",
+      "email": "Hance01@gmail.com",
+      "id": 7
     },
     {
-      "email": "ando@gmail.com",
-      "first_name": "ando",
-      "last_name": "suak",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg",
-      "id": 16
+      "firstName": "ance",
+      "lastName": "suak",
+      "email": "ance@gmail.com",
+      "id": 8
     }
   ]
 }

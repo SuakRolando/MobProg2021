@@ -1,40 +1,32 @@
 import React from 'react';
-import {View, Text, StyleSheet, TextInput as Input} from 'react-native';
+import {StyleSheet, Text, TextInput as Input, View} from 'react-native';
 
-// const TextInput = props => {     //ambil props
 const TextInput = ({label, placeholder, ...rest}) => {
-    return (
-       <View>
-            <Text style={styles.labelInput}>{label}</Text>
-            <Input style={styles.input} placeholder={placeholder} {...rest}/>
-       </View>
-    );
+  return (
+    <View>
+      <Text style={styles.labelInput}>{label}</Text>
+      <Input style={styles.Input} placeholder={placeholder} {...rest} />
+    </View>
+  );
 };
 
-const styles = StyleSheet.create({
-    labelInput:{
-        fontSize: 14,
-        fontFamily: 'Roboto',
-        fontStyle:'normal',
-        fontWeight: 'bold',
-        lineHeight: 16,
-        marginLeft:24, 
-        marginTop:20,
-        marginBottom:8,
-        color:'black',
-    },
-    input: {
-        fontFamily: 'Roboto',
-        fontStyle: 'normal',
-        fontSize: 12,
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        marginHorizontal: 24,
-        paddingTop: 14,
-        paddingBottom: 11,
-        paddingLeft: 10,
-    },
-});
-
 export default TextInput;
+
+const styles = StyleSheet.create({
+  labelInput: {
+    fontSize: 18,
+    marginHorizontal: 24,
+    fontWeight: 'bold',
+    marginBottom: 2,
+  },
+
+  Input: {
+    borderWidth: 1,
+    borderColor: 'grey',
+    borderRadius: 10,
+    marginHorizontal: 24,
+    paddingVertical: 10,
+    paddingLeft: 12,
+    marginBottom: 18,
+  },
+});
